@@ -5,9 +5,10 @@ set(CMAKE_C_STANDARD 99)
 
 include_directories(
         sds
+        include
 )
 
-set(SOURCE_FILES sds/sds.c sms.c)
+set(SOURCE_FILES sds/sds.c csvparser.c sms.c)
 add_executable(sms ${SOURCE_FILES})
 
 FIND_PACKAGE(CURL)
